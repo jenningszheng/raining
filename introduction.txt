@@ -8,3 +8,14 @@
  订单           提交订单、查看订单、订单商品评价
  支付           支付宝支付、微信支付
  MIS系统        数据统计、用户管理、权限管理、商品管理、订单管理
+
+技术方案
+开发模式：前后端不分离
+后端框架：Django+Jinja2模板引擎
+前端框架：Vue.js
+代理服务：Nginx服务器（反向代理）
+静态服务：Nginx服务器（静态首页、商品详情页、...）
+动态服务：uwsgi服务器（商场业务场景）
+后端服务：MySQL、Redis、Celery、RabbitMQ、Docker、FastDFS、ElasticSearch、Crontab
+外部接口：容联云、QQ互联、支付宝
+
